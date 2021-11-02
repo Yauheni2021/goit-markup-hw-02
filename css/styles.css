@@ -1,5 +1,138 @@
-.body {
+:root {
+  --title-text-color: #212121;
+  --primary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #2f303a;
+  --logo-color: #000000;
+  --link-color: #c4c4c4;
+  --bg-button-color: #188ce8;
+  --bg-team-color: #f5f4fa;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --btn-shadow-color: rgba(0, 0, 0, 0.15);
+}
+
+.forbody {
+  color: var(--primary-bg-color);
+  color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  color: #212121;
 }
+ul {
+  list-style: none;
+}
+/*logo*/
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: var(--accent-color);
+}
+
+.logoheader {
+  color: var(--logo-color);
+}
+
+/*шапка*/
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.nav-item .link.current {
+  color: var(--accent-color);
+}
+
+.contacts-item .link {
+  color: var(--primary-text-color);
+}
+
+.contacts-item .link:hover,
+.contacts-item .link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-item .link.current {
+  color: var(--accent-color);
+}
+/*герой*/
+
+.hero-section {
+  background-color: var(--secondary-bg-color);
+  text-align: center;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  /* text-align: center; */
+  color: var(--primary-bg-color);
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87em;
+  align-items: center;
+  /* text-align: center; */
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--primary-bg-color);
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px var(--btn-shadow-color);
+  border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+}
+
+/* future */
+.section-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.section-text {
+  font-size: 14px;
+  line-height: 1.71em;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+/* проекты */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+/* команда */
