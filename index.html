@@ -10,16 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
 </head>
 <!--Шапка-->
 
-<body>
-    <header>
+<body class="forbody">
+    <header class="page-header">
         <nav class="nav">
-            <a href="/" class="logo">Web<span class="logoheder">Studio</span></a>
+            <a href="/" class="logo">Web<span class="logoheader">Studio</span></a>
             <ul class="header-list">
                 <li class="nav-item">
-                    <a href="/" class="link">Студия</a>
+                    <a href="/" class="link current">Студия</a>
                 </li>
                 <li class="nav-item">
                     <a href="portfolio.html" class="link">Портфолио</a>
@@ -31,7 +32,7 @@
         </nav>
         <ul class="contacts-list">
             <li class="contacts-item">
-                <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="link current">info@devstudio.com</a>
             </li>
             <li class="contacts-item">
                 <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
@@ -45,81 +46,82 @@
     </section>
     <!--Главная-->
     <main>
-        <section>
-        <ul class="">
+        <section class="future-section">
+        <ul class="future-list">
             <li class="text">
                 <h3 class="section-subtitle">Внимание к деталям</h3>
-                <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                <p class="section-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
             <li class="text">
                 <h3 class="section-subtitle">Пунктуальность</h3>
-                <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                <p class="section-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
             <li class="text">
                 <h3 class="section-subtitle">Планирование</h3>
-                <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                <p class="section-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
             <li class="text">
                 <h3 class="section-subtitle">Современные технологии</h3>
-                <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                <p class="section-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
         </section>
         <!--Проекты-->
-        <section>
-            <h2>Чем мы занимаемся</h2>
-            <ul>
-                <li>
-                    <img src="./images/img1.jpg" alt="человек печатает код" width="370">
+        <section class="section">
+            <h2 class="section-title">Чем мы занимаемся</h2>
+            <ul class="section-projects">
+                <li class="section-list-projects">
+                    <img src="./images/img1.jpg" alt="человек печатает код" width="370" class="image">
                 </li>
-                <li>
-                    <img src="./images/img2.jpg" alt="девушка смотрит в телефон рядом с компьютером" width="370">
+                <li class="section-list-projects">
+                    <img src="./images/img2.jpg" alt="девушка смотрит в телефон рядом с компьютером" width="370" class="image">
                 </li>
-                <li>
-                    <img src="./images/img3.jpg" alt="разаработка в планшете" width="370">
+                <li class="section-list-projects">
+                    <img src="./images/img3.jpg" alt="разаработка в планшете" width="370" class="image">
                 </li>
             </ul>
         </section>
         <!--О нас-->
-        <section>
-            <h2>Наша команда</h2>
-            <ul>
-                <li>
-                    <img src="./images/img4.jpg" alt="Дизайнер продуктов" width="270">
-                    <h3>Игорь Демьяненко</h3>
-                    <p>Product Designer</p>
+        <section class="section">
+            <h2 class="section-title">Наша команда</h2>
+            <ul class="section-teamlist">
+                <li class="workteam-list">
+                    <img src="./images/img4.jpg" alt="Дизайнер продуктов" width="270" class="image">
+                    <h3 class="workteam-subtitle">Игорь Демьяненко</h3>
+                    <p lang="en" class="section-text">Product Designer</p>
                 </li>
-                <li>
-                    <img src="./images/img5.jpg" alt="Фронтенд разработчик" width="270">
-                    <h3>Ольга Репина</h3>
-                    <p>Frontend Developer</p>
+                <li class="workteam-list">
+                    <img src="./images/img5.jpg" alt="Фронтенд разработчик" width="270" class="image">
+                    <h3 class="workteam-subtitle">Ольга Репина</h3>
+                    <p lang="en" class="section-text">Frontend Developer</p>
                 </li>
-                <li>
-                    <img src="./images/img6.jpg" alt="Маркетинг" width="270">
-                    <h3>Николай Тарасов</h3>
-                    <p>Marketing</p>
+                <li class="workteam-list">
+                    <img src="./images/img6.jpg" alt="Маркетинг" width="270" class="image">
+                    <h3 class="workteam-subtitle">Николай Тарасов</h3>
+                    <p lang="en" class="section-text">Marketing</p>
                 </li>
-                <li>
-                    <img src="./images/img7.jpg" alt="Дизайнер" width="270">
-                    <h3>Михаил Ермаков</h3>
-                    <p>UI Designer</p>
+                <li class="workteam-list">
+                    <img src="./images/img7.jpg" alt="Дизайнер" width="270" class="image">
+                    <h3 class="workteam-subtitle">Михаил Ермаков</h3>
+                    <p lang="en" class="section-text">UI Designer</p>
                 </li>
             </ul>
         </section>
     </main>
     <!--Подвал-->
-    <footer>
-        <a href="/">Web<span>Studio</span></a>
-        <address>
-            <ul>
-                <li>
-                    <a href="https://goo.gl/maps/anP9cVmsHsZmDmLo8" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+    <footer class="section-footer">
+        <a href="/" class="logo">Web<span class="logoheader">Studio</span></a>
+        <address class="footer-address">
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <a href="https://goo.gl/maps/anP9cVmsHsZmDmLo8" target="_blank" rel="noopener noreferrer" class="footer-link" >
+                        <span class="link current">г. Киев, пр-т Леси Украинки, 26</span></a>
                 </li>
-                <li>
-                    <a href="mailto:info@example.com">info@example.com</a>
+                <li class="footer-item">
+                    <a href="mailto:info@example.com" class="link">info@example.com</a>
                 </li>
-                <li>
-                    <a href="tel:+380991111111">+38 099 111 11 11</a>
+                <li class="footer-item">
+                    <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
                 </li>
             </ul>
         </address>
