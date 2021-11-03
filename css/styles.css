@@ -136,3 +136,42 @@ ul {
 }
 
 /* команда */
+
+.workteam-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18em;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.section-text.worker {
+  font-size: 16px;
+  line-height: 1.18em;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+/* подвал */
+
+.footer-link {
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  color: var(--primary-bg-color);
+  text-decoration: none;
+}
+
+.footer-address .link.current {
+  color: var(--primary-bg-color);
+}
+
+.section-footer {
+  background-color: var(--secondary-bg-color);
+}
+
+.section-footer .logoheader {
+  color: var(--primary-bg-color);
+}
