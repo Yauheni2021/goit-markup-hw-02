@@ -8,6 +8,7 @@
   --link-color: #c4c4c4;
   --bg-button-color: #188ce8;
   --bg-team-color: #f5f4fa;
+  --cards-border: #eeeeee;
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --btn-shadow-color: rgba(0, 0, 0, 0.15);
 }
@@ -141,7 +142,7 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18em;
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
@@ -149,24 +150,16 @@ ul {
 .section-text.worker {
   font-size: 16px;
   line-height: 1.18em;
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
+.section-about-team {
+  background-color: var(--bg-team-color);
+}
+
 /* подвал */
-
-.footer-link {
-  font-size: 14px;
-  line-height: 1.71em;
-  letter-spacing: 0.03em;
-  color: var(--primary-bg-color);
-  text-decoration: none;
-}
-
-.footer-address .link.current {
-  color: var(--primary-bg-color);
-}
 
 .section-footer {
   background-color: var(--secondary-bg-color);
@@ -174,4 +167,80 @@ ul {
 
 .section-footer .logoheader {
   color: var(--primary-bg-color);
+}
+
+.footer-list .footer-link.current {
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  color: var(--primary-bg-color);
+}
+
+.footer-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  color: var(--footer-link-color);
+  text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+
+.footer-link.current:hover,
+.footer-link.current:focus {
+  color: var(--accent-color);
+}
+
+/* портфолио */
+/* кнопки фильтров */
+
+.secondary-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.nav-buttons .secondary-button:hover,
+.nav-buttons .secondary-button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.secondary-button.current {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+}
+
+/* карточки */
+
+.cards-suplink {
+  text-decoration: none;
+}
+
+.cards-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2em;
+
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.cards-suplist {
+  background: var(--primary-bg-color);
+  border: 1px solid var(--cards-border);
+  box-sizing: border-box;
 }
