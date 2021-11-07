@@ -1,4 +1,5 @@
 :root {
+  --main-bg-color: #e5e5e5;
   --title-text-color: #212121;
   --primary-text-color: #757575;
   --accent-color: #2196f3;
@@ -15,16 +16,18 @@
 
 .forbody {
   color: var(--primary-bg-color);
-  color: var(--primary-text-color);
+  background-color: var(--main-bg-color);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
-ul {
+
+.section-list {
   list-style: none;
 }
+
 /*logo*/
 .logo {
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19em;
@@ -98,7 +101,7 @@ ul {
 
   background: var(--accent-color);
   box-shadow: 0px 4px 4px var(--btn-shadow-color);
-  border-radius: 4px;
+  /* border-radius: 4px; */
 }
 
 .hero-button:hover,
@@ -169,7 +172,7 @@ ul {
   color: var(--primary-bg-color);
 }
 
-.footer-list .footer-link.current {
+.section-footer .footer-link.current {
   font-size: 14px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
@@ -202,13 +205,14 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62em;
+  font-family: inherit;
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
 }
 
-.nav-buttons .secondary-button:hover,
-.nav-buttons .secondary-button:focus {
+.secondary-button:hover,
+.secondary-button:focus {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -240,7 +244,6 @@ ul {
 }
 
 .cards-suplist {
-  background: var(--primary-bg-color);
   border: 1px solid var(--cards-border);
   box-sizing: border-box;
 }
